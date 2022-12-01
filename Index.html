@@ -1,45 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST INTERFACE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
 <body>
-    <form method="post" action="/ressol" enctype="multipart/form-data">
-        <label>FINI</label>
-        <input type="time" name="fini" required>
-        <label>FEND</label>
-        <input type="time" name="fend" required>
-        <label>CHINGA PORQUE??!</label>
-        <input type="text" name='event' required>
-        <label>DEPENDENCIA</label>
-        <input type="text" name='depen' required>
-        <label>CELULAR</label>
-        <input type="number" name='cont' required>
-        <label>SUMAIL</label>
-        <input type="text" name='email' required>
-        <label>DOC</label>
-        <input type="file" name='file'>
-        <P></P> SITIO
-        <select name="sit" id="sit">
-            <option value="Sala de VideoConferencias 1" selected>Sala de VideoConferencias 1</option>
-            <option value="Sala de VideoConferencias 2">Sala de VideoConferencias 2</option>
-            <option value="Auditorio">Auditorio</option>
-        </select>
-        <input class="btn btn-primary" type="submit">
-    </form>
-
-    <a href="/list">
-        <button class="btn btn-info ">LISTA DOCUMENTOS</button>
-    </a>
-
-    <a href="/report">
-        <button class="btn btn-info ">LISTA REPORTES</button>
-    </a>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+        <form>
+          <div class="form-group mb-6">
+            <label for="exampleInputEmail1" class="form-label inline-block mb-2 text-gray-700">Email address</label>
+            <input type="email" class="form-control
+              block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInputEmail1"
+              aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="block mt-1 text-xs text-gray-600">We'll never share your email with anyone
+              else.</small>
+          </div>
+          <div class="form-group mb-6">
+            <label for="exampleInputPassword1" class="form-label inline-block mb-2 text-gray-700">Password</label>
+            <input type="password" class="form-control block
+              w-full
+              px-3
+              py-1.5
+              text-base
+              font-normal
+              text-gray-700
+              bg-white bg-clip-padding
+              border border-solid border-gray-300
+              rounded
+              transition
+              ease-in-out
+              m-0
+              focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInputPassword1"
+              placeholder="Password">
+          </div>
+          <div class="form-group form-check mb-6">
+          </div>
+          <button type="submit" class="
+            px-6
+            py-2.5
+            bg-blue-600
+            text-white
+            font-medium
+            text-xs
+            leading-tight
+            uppercase
+            rounded
+            shadow-md
+            hover:bg-blue-700 hover:shadow-lg
+            focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+            active:bg-blue-800 active:shadow-lg
+            transition
+            duration-150
+            ease-in-out">Submit</button>
+        </form>
+      </div>
 </body>
 </html>
