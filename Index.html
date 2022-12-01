@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST INTERFACE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <form method="post" action="/ressol" enctype="multipart/form-data">
+        <label>FINI</label>
+        <input type="time" name="fini" required>
+        <label>FEND</label>
+        <input type="time" name="fend" required>
+        <label>CHINGA PORQUE??!</label>
+        <input type="text" name='event' required>
+        <label>DEPENDENCIA</label>
+        <input type="text" name='depen' required>
+        <label>CELULAR</label>
+        <input type="number" name='cont' required>
+        <label>SUMAIL</label>
+        <input type="text" name='email' required>
+        <label>DOC</label>
+        <input type="file" name='file'>
+        <P></P> SITIO
+        <select name="sit" id="sit">
+            <option value="Sala de VideoConferencias 1" selected>Sala de VideoConferencias 1</option>
+            <option value="Sala de VideoConferencias 2">Sala de VideoConferencias 2</option>
+            <option value="Auditorio">Auditorio</option>
+        </select>
+        <input class="btn btn-primary" type="submit">
+    </form>
+
+    <a href="/list">
+        <button class="btn btn-info ">LISTA DOCUMENTOS</button>
+    </a>
+
+    <a href="/report">
+        <button class="btn btn-info ">LISTA REPORTES</button>
+    </a>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
